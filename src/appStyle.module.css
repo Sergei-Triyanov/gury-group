@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+body {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    background-color: #fff;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+    color: inherit;
+}
+
+.wrapper {
+    max-width: 921px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 0.4fr 1.6fr;
+    grid-template-rows: 1fr;
+    gap: 0 30px;
+    grid-template-areas:
+    "progress content";
+}
+
+.progress__bar {
+    grid-area: progress;
+    position: fixed;
+    top: 105px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    max-width: 711px;
+    grid-area: content;
+    padding-top: 40px;
+}
+
+.title{
+    font-size: 18px;
+    font-weight: 400;
+    font-style: normal;
+    margin-bottom: 11px;
+}
+
+
+@media (max-width: 946px) {
+    .wrapper{
+        display: flex;
+        justify-content: center;
+    }
+    .progress__bar{
+        display: none;
+    }
+}
+
+@media (max-width: 760px) {
+    .content{
+        max-width: 565px;
+    }
+}
+
+@media (max-width: 610px) {
+    .content{
+        max-width: 465px;
+    }
+}
+
+@media (max-width: 530px) {
+    .content{
+        max-width: 320px;
+    }
+}
+
+@media (max-width: 400px) {
+    .content{
+        max-width: 250px;
+    }
+}
