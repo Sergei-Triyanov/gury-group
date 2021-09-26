@@ -1,0 +1,42 @@
+.bar{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+}
+
+.svg{
+    fill: rgba(0, 0, 0, 0);
+    cursor: pointer;
+    transition:  .12s ease-out;
+}
+.svg__see{
+    cursor: pointer;
+    fill: #ffffff;
+    transition: fill .12s ease-out;
+}
+
+.svg__see + .svg__see{
+    margin-top: 12px;
+}
+
+.svg__see path{
+    stroke-width: 1px;
+    stroke: #2c2c2c;
+}
+
+.svg__see:hover{
+    fill: #00A0AB;
+}
+
+
+.svg:hover{
+    fill: #00A0AB;
+}
+
+.svg + .svg{
+    margin-top: 12px;
+}
+

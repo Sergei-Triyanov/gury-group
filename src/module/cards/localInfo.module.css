@@ -1,0 +1,10 @@
+.local{
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    color: #8F8F8F;
+    line-height: 14px;
+    hyphens: none;
+    white-space: nowrap;
+    overflow: hidden;
+}

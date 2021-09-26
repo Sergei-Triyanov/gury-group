@@ -1,7 +1,8 @@
-import React, {useEffect, useState} from 'react';
+import React, { useState} from 'react';
 import s from './appStyle.module.css';
 import Progress from "./module/progress/Progress";
 import ContentPage from "./module/content/ContentPage";
+import Cards from "./module/cards/Cards";
 
 const App = () => {
 
@@ -20,13 +21,18 @@ const App = () => {
   }))
 
   return (
-    <div className={s.wrapper}>
-      <Progress classes={s.progress__bar} progress={progressElements}/>
-      <div className={s.content}>
-        <h1 className={s.title}>Новое объявление</h1>
-        <ContentPage handleProgressElement={handleProgressElement}/>
-      </div>
-    </div>
+      <>
+        <div className={s.wrapper}>
+          <Progress classes={s.progress__bar} progress={progressElements}/>
+          <div className={s.content}>
+            <h1 className={s.title}>Новое объявление</h1>
+            <ContentPage handleProgressElement={handleProgressElement}/>
+          </div>
+        </div>
+        <div>
+          <Cards/>
+        </div>
+      </>
   );
 }
 
